@@ -52,7 +52,7 @@ public class WatchListDao {
 			try {
 				boolean b = true;
 				while(rs.next()) {
-					if(rs.getString("products").equals(watchlist.getProducts()) && rs.getString("watchlist").equals(watchlist.getWatchlistname())) {
+					if(rs.getString("products").equals(watchlist.getProducts()) && rs.getString("watchlistname").equals(watchlist.getWatchlistname())) {
 						b=false;
 						return b;
 					}
