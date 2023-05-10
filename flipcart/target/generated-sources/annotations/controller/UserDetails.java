@@ -28,13 +28,14 @@ public class UserDetails extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-	private Gson gson;
-	private UserDao dao;
-    public void init() {
-    	gson = new Gson();
-    	dao = new UserDao();
-    
-    }
+     	private Gson gson;
+    	private UserDao dao;
+	
+	
+    	public void init() {
+    		gson = new Gson();
+    		dao = new UserDao();
+    	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
