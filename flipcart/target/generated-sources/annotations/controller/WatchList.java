@@ -28,11 +28,12 @@ public class WatchList extends HttpServlet {
      */
 	private Gson gson;
 	private WatchListDao dao;
-    public void init() {
-    	gson = new Gson();
-    	dao = new WatchListDao();
+	
+   	public void init() {
+    		gson = new Gson();
+    		dao = new WatchListDao();
     
-    }
+    	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
